@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'hyfi@0ht#6+*w4zqoaj9ce1f$^p1#erascou%p@vpoe*l+0u-$'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['15.206.195.112', '127.0.0.1', '0.0.0.0']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'comingsoon.apps.ComingsoonConfig',
+    'whitenoise.runserver_nostatic',
 ]
 
 MIDDLEWARE = [
