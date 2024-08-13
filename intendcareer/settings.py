@@ -25,7 +25,7 @@ SECRET_KEY = 'hyfi@0ht#6+*w4zqoaj9ce1f$^p1#erascou%p@vpoe*l+0u-$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
     'comingsoon.apps.ComingsoonConfig',
+    'requestemail.apps.RequestemailConfig',
 ]
 
 MIDDLEWARE = [
